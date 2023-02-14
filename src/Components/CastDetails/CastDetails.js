@@ -28,7 +28,8 @@ const CastDetails = () => {
           <div>
             <Row
               xs={1}
-              md={2}
+              md={1}
+              lg={2}
               className="align-items-center justify-content-around"
             >
               <Col className="right-custom-border">
@@ -58,7 +59,7 @@ const CastDetails = () => {
                     <p className="cast-info-style">{character.gender}</p>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1">
+                  <Col xs={12} className="custom-border p-3 mx-auto ">
                     <img className="icon-image" src={originIcon} alt="" />
                     <p className="small-font">Origin</p>
                     <div className="d-flex justify-content-between">
@@ -67,7 +68,7 @@ const CastDetails = () => {
                     </div>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1">
+                  <Col xs={12} className="custom-border p-3 mx-auto">
                     <img className="icon-image" src={locationIcon} alt="" />
                     <p className="small-font">Last Known Location</p>
                     <div className="d-flex justify-content-between">
@@ -78,7 +79,7 @@ const CastDetails = () => {
                     </div>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1">
+                  <Col xs={12} className="custom-border p-3 mx-auto">
                     <img className="icon-image" src={episodeIcon} alt="" />
                     <p className="small-font">Episodes</p>
                     <ul className="cast-info-style">

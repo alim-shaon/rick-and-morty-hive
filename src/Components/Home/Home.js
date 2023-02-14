@@ -48,7 +48,14 @@ const Home = () => {
           </h1>
           <Row className="my-5 g-5 overflow-hidden font-face-TT-regular justify-content-center align-items-center">
             <Col xs={11} lg={2} className="mx-0 text-center order-2 order-lg-1">
-              <Button className="mx-0 custom-button-1">Watch Now</Button>
+              <Button className="mx-0 custom-button-1">
+                <Link
+                  to="https://www.youtube.com/watch?v=KQ9Cgdsa9tc&ab_channel=ONEMedia"
+                  target="_blank"
+                >
+                  Watch Now
+                </Link>
+              </Button>
             </Col>
             <Col className="order-1 order-lg-2" xs={11} lg={2}>
               <p className="mx-auto order-1 order-lg-2 custom-color-1">

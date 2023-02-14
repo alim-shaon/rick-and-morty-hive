@@ -31,10 +31,14 @@
 
 .cast-card img{
     width: 100%;
+    object-fit: contain;
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px){
     .cast-card{
-        height: 250px;
+        min-height: 250px;
+    }
+    .cast-card img{
+        width: 100%;
     }
 }

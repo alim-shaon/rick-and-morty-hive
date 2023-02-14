@@ -5,6 +5,14 @@
     border-radius: 30px !important;
     background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
 }
+.custom-button-1 a{
+    text-decoration: none;
+    color: white;
+}
+.custom-button-1 a:hover{
+    text-decoration: none;
+    color: white;
+}
 .view-all-button{
     border: 2px solid #9DFE00;
     padding: 10px 24px;
@@ -109,8 +117,8 @@
     position: absolute;
     width: 214.6px;
     height: 214.6px;
-    left: 19%;
-    top: 192px;
+    left: 90px;
+    top: 195px;
     filter: blur(1.56743px);
     transform: rotate(43.58deg);
 }
@@ -118,14 +126,14 @@
     position: absolute;
     width: 318.91px;
     height: 331.98px;
-    top: 325px;
-    right: 10%;
+    top: 425px;
+    right: 10px;
 }
 .pill-image img{
     position: absolute;
     width: 50px;
     height: 10px;
-    right: 25%;
+    right: 215px;
     top: 265px;
 }
 /* home page second part */
@@ -149,7 +157,8 @@
 /*--------------------------
 code for mobile
 -------------------------- */
-@media screen and (min-width: 360px) and (max-width: 767px){
+
+@media screen and (min-width: 360px) and (max-width: 1023px){
     .home-title-container{
         margin-top: 37px;
         height: 375px;
@@ -179,7 +188,7 @@ code for mobile
         top: 170px;
         width: 119.13px;
         height: 124.01px;
-        left: 300px;
+        right: 0px;
     }
     .pill-image img{
         display: none;
@@ -188,5 +197,14 @@ code for mobile
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1023px){
+    .bubble-image img{
+        top: 118px;
+        left: 120px;
+    }
+    .gun-image img{
+        right: 75px;
     }
 }

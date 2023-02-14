@@ -45,7 +45,21 @@
 /*--------------------------
 code for mobile
 -------------------------- */
-@media screen and (min-width: 360px) and (max-width: 767px){
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .cast-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 40px;
+    }
+    .cast-list-container h1{
+        color: #14D9E5;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 19px;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 768px){
     .cast-list{
         display: grid;
         grid-template-columns: repeat(2,1fr);
