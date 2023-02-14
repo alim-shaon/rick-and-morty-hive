@@ -20,17 +20,19 @@
     position: relative;
     z-index: 99;
     color: white;
+    overflow: hidden;
 }
 .home-title-container{
     position: relative;
     z-index: 99;
     margin-top: 179px;
     height: 511px;
+    /* overflow: hidden; */
 }
 .glow{
     position: absolute;
     left: 22%;
-    top: 5%;
+    top: 260px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
@@ -68,7 +70,7 @@
     position: absolute;
     width: 214.6px;
     height: 214.6px;
-    left: 21%;
+    left: 18%;
     top: 192px;
     filter: blur(1.56743px);
     transform: rotate(43.58deg);
@@ -80,7 +82,7 @@
     width: 318.91px;
     height: 331.98px;
     top: 325px;
-    right: 14%;
+    right: 10%;
     background-image: url("../../Media asset/Home page/Hero Elements/Gun.png");
     background-position: center;
 }
@@ -88,7 +90,7 @@
     position: absolute;
     width: 50px;
     height: 10px;
-    right: 27.5%;
+    right: 25%;
     top: 265px;
     background-image: url("../../Media asset/Home page/Hero Elements/pill.png");
     background-position: center;
@@ -142,4 +144,7 @@
 .home-body{
     position: relative;
     z-index: 99;
+}
+.cast-card-container{
+    width: 95%;
 }
