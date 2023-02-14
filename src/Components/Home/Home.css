@@ -22,6 +22,45 @@
     color: white;
     overflow: hidden;
 }
+.home-bg-1{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.home-bg-3{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Spiral.png");
+    /* background-size:; */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.home-bg-2{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .home-title-container{
     position: relative;
     z-index: 99;
@@ -101,45 +140,7 @@
     color: white;
     height: 500px;
 }
-.home-bg-1{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background-image: url("../../Media asset/Home page/Background  Elements/Background.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-.home-bg-3{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background-image: url("../../Media asset/Home page/Background  Elements/Spiral.png");
-    /* background-size:; */
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-.home-bg-2{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    background-image: url("../../Media asset/Home page/Background  Elements/Star.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 /* second part of home body */
 .home-body{
     position: relative;

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./Home.css";
 import portalImage from "../../Media asset/Home page/Hero Elements/portal.png";
 import Header from "../Header/Header";
@@ -15,27 +14,13 @@ import {
 } from "../../hook/SlickCarouselControl";
 import LocationCard from "../LocationCard/LocationCard";
 import Episode from "../Episodes/Episode";
+import { useCharacters, useEpi, useLoc } from "../../hook/loadData";
 
 const Home = () => {
   // load all character
-  const [characters, setCharacters] = useState([]);
-  const [episodes, setEpisodes] = useState([]);
-  const [locations, setLocations] = useState([]);
-  useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((res) => res.json())
-      .then((data) => setCharacters(data.results));
-  }, []);
-  useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/episode")
-      .then((res) => res.json())
-      .then((data) => setEpisodes(data.results));
-  }, []);
-  useEffect(() => {
-    fetch("https://rickandmortyapi.com/api/location")
-      .then((res) => res.json())
-      .then((data) => setLocations(data.results));
-  }, []);
+  const [characters] = useCharacters([]);
+  const [episodes] = useEpi([]);
+  const [locations] = useLoc([]);
 
   const settingsOne = carouselSettings();
   const settingsTwo = secondCarouselSettings();

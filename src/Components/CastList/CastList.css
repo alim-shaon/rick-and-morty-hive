@@ -1,0 +1,44 @@
+.cast-list-container{
+    position: relative;
+    z-index: 99;
+    color: white;
+    overflow: hidden;
+}
+.cast-list-bg-1{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Cast/Background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cast-list-bg-2{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Cast/Star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.cast-list-container h1{
+    color: #14D9E5;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 76.78px;
+    margin-top: 110px;
+}
+.cast-list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 40px;
+}
