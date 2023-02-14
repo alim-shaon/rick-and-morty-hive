@@ -6,7 +6,7 @@ const Episode = ({ episode }) => {
     <div>
       <div className="episode-card-container p-3 mx-3">
         <p># {episode.episode}</p>
-        <p style={{ fontSize: "24px" }}>{episode.name}</p>
+        <p className="episode-custom-font">{episode.name}</p>
       </div>
     </div>
   );

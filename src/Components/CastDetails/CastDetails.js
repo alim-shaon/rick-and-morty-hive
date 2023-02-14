@@ -10,12 +10,14 @@ import originIcon from "../../Media asset/Cast Details/Icons/SVG/origin.svg";
 import redirectIcon from "../../Media asset/Cast Details/Icons/SVG/Redirect.svg";
 import speciesIcon from "../../Media asset/Cast Details/Icons/SVG/Species.svg";
 import statusIcon from "../../Media asset/Cast Details/Icons/SVG/Status.svg";
-import useEpisodesName from "../../hook/getEpisodeName";
+import EpisodeList from "../EpisodeList/EpisodeList";
 
 const CastDetails = () => {
   const character = useLoaderData();
   // console.log(character.episode);
-  const [episodesList] = useEpisodesName(character.episode);
+  // const [episodesList] = useEpisodesName(character.episode);
+  // console.log();
+  const episodesList = character.episode;
   return (
     <div className="text-white">
       <div className="cast-details-container">
@@ -36,35 +38,38 @@ const CastDetails = () => {
                 </div>
               </Col>
               <Col className="px-2 px-lg-5">
-                <Row className="g-4 justify-content-around">
-                  <Col xs={3} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={statusIcon} alt="" /> <br />
-                    <p>Status</p>
+                <Row className="g-4 justify-content-between ">
+                  <Col xs={3} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={statusIcon} alt="" />{" "}
+                    <br />
+                    <p className="small-font">Status</p>
                     <p className="cast-info-style">{character.status}</p>
                   </Col>
-                  <Col xs={3} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={speciesIcon} alt="" /> <br />
-                    <p>Species</p>
+                  <Col xs={3} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={speciesIcon} alt="" />{" "}
+                    <br />
+                    <p className="small-font">Species</p>
                     <p className="cast-info-style">{character.species}</p>
                   </Col>
-                  <Col xs={3} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={genderIcon} alt="" /> <br />
-                    <p>Status</p>
+                  <Col xs={3} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={genderIcon} alt="" />{" "}
+                    <br />
+                    <p className="small-font">Status</p>
                     <p className="cast-info-style">{character.gender}</p>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={originIcon} alt="" />
-                    <p>Origin</p>
+                  <Col xs={12} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={originIcon} alt="" />
+                    <p className="small-font">Origin</p>
                     <div className="d-flex justify-content-between">
                       <p className="cast-info-style">{character.origin.name}</p>
                       <img src={redirectIcon} alt="" />
                     </div>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={locationIcon} alt="" />
-                    <p>Last Known Location</p>
+                  <Col xs={12} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={locationIcon} alt="" />
+                    <p className="small-font">Last Known Location</p>
                     <div className="d-flex justify-content-between">
                       <p className="cast-info-style">
                         {character.location.name}
@@ -73,12 +78,15 @@ const CastDetails = () => {
                     </div>
                   </Col>
 
-                  <Col xs={12} className="custom-border p-3 mx-1 mx-lg-4">
-                    <img src={episodeIcon} alt="" />
-                    <p>Episodes</p>
+                  <Col xs={12} className="custom-border p-3 mx-1">
+                    <img className="icon-image" src={episodeIcon} alt="" />
+                    <p className="small-font">Episodes</p>
                     <ul className="cast-info-style">
                       {episodesList.map((episode) => (
-                        <li key={episode.id}>{episode.name}</li>
+                        <EpisodeList
+                          key={episode}
+                          episode={episode}
+                        ></EpisodeList>
                       ))}
                     </ul>
                   </Col>

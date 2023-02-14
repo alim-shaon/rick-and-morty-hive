@@ -12,7 +12,7 @@ const CastList = () => {
         <Header></Header>
         <div className="cast-list-bg-1"></div>
         <div className="cast-list-bg-2"></div>
-        <div className="px-5 mx-5">
+        <div className="px-1 px-lg-5 mx-1 mx-lg-5">
           <h1>The Cast</h1>
           <div className="cast-list my-5">
             {characters.map((character) => (

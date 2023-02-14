@@ -4,6 +4,9 @@ import Header from "../Header/Header";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Cast from "../Cast/Cast";
+import bubbleImage from "../../Media asset/Home page/Hero Elements/bubble.png";
+import gunImage from "../../Media asset/Home page/Hero Elements/Gun.png";
+import pillImage from "../../Media asset/Home page/Hero Elements/pill.png";
 // from slick slider
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,7 +36,7 @@ const Home = () => {
         <div className="home-bg-3"></div>
         <h1 className="glow ">Thisglowingeffect</h1>
         <div className="home-title-container font-face-TT-bold-italic">
-          <h1 className="home-title">
+          <h1 className="home-title mx-auto">
             <span>The</span>
             <span>
               <img src={portalImage} alt="" />
@@ -43,12 +46,12 @@ const Home = () => {
             </span>{" "}
             <span>wiki</span>
           </h1>
-          <Row className="my-5 g-0 overflow-hidden font-face-TT-regular justify-content-md-center align-items-center">
-            <Col xs lg="2" className="mx-0 text-center">
+          <Row className="my-5 g-5 overflow-hidden font-face-TT-regular justify-content-center align-items-center">
+            <Col xs={11} lg={2} className="mx-0 text-center order-2 order-lg-1">
               <Button className="mx-0 custom-button-1">Watch Now</Button>
             </Col>
-            <Col xs lg="2">
-              <p className="mx-0 custom-color-1">
+            <Col className="order-1 order-lg-2" xs={11} lg={2}>
+              <p className="mx-auto order-1 order-lg-2 custom-color-1">
                 Brilliant but boozy scientist Rick hijacks his fretful teenage
                 grandson, Morty, for wild escapades in other worlds and
                 alternate dimensions.
@@ -56,16 +59,22 @@ const Home = () => {
             </Col>
           </Row>
         </div>
-        <div className="bubble-image"></div>
-        <div className="gun-image"></div>
-        <div className="pill-image"></div>
+        <div className="bubble-image">
+          <img src={bubbleImage} alt="" />
+        </div>
+        <div className="gun-image">
+          <img src={gunImage} alt="" />
+        </div>
+        <div className="pill-image">
+          <img src={pillImage} alt="" />
+        </div>
 
         <div className="color-white home-body py-5 mx-4">
-          <div className="d-flex justify-content-between ">
-            <div className="mx-5 my-5">
-              <p style={{ fontSize: "24px" }}>Meet The Cast</p>
+          <div className="d-flex justify-content-between align-items-center my-3 my-lg-5">
+            <div className="mx-0 mx-lg-5 my-2">
+              <p className="home-font-2">Meet The Cast</p>
             </div>
-            <div className="mx-5 my-5">
+            <div className="mx-0 mx-lg-5 my-2">
               <Link className="mx-4 my-5 view-all-button" to={"/castList"}>
                 View All
               </Link>
@@ -82,9 +91,7 @@ const Home = () => {
 
           <div className="my-4">
             <div className="my-5">
-              <p className="mx-5 my-4 pt-5" style={{ fontSize: "24px" }}>
-                Episodes
-              </p>
+              <p className="mx-5 my-4 pt-5 home-font-2">Episodes</p>
               <Slider
                 {...settingsTwo}
                 className="cast-card-container mx-auto g-4 justify-content-center"
@@ -98,9 +105,7 @@ const Home = () => {
 
           <div className="my-4">
             <div className="my-5">
-              <p className="mx-5 my-4 pt-5" style={{ fontSize: "24px" }}>
-                Locations
-              </p>
+              <p className="mx-5 my-4 pt-5 home-font-2">Locations</p>
               <Slider
                 {...settingsTwo}
                 className="cast-card-container mx-auto g-4 justify-content-center"

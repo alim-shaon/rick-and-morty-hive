@@ -23,13 +23,15 @@ const carouselSettings = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
+          infinite: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],
@@ -61,13 +63,15 @@ const secondCarouselSettings = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
+          infinite: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],

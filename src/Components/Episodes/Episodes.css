@@ -16,3 +16,18 @@
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
 }
+.episode-custom-font{
+    font-size: 24px;
+    font-weight: 500;
+}
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .episode-custom-font{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .episode-card-container{
+        
+        height: 140px;
+    }
+}

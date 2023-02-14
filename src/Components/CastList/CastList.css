@@ -42,3 +42,20 @@
     grid-template-columns: repeat(5,1fr);
     grid-gap: 40px;
 }
+/*--------------------------
+code for mobile
+-------------------------- */
+@media screen and (min-width: 360px) and (max-width: 767px){
+    .cast-list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 40px;
+    }
+    .cast-list-container h1{
+        color: #14D9E5;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 19px;
+        padding-left: 20px;
+    }
+}
