@@ -1,0 +1,9 @@
+.logo{
+    width: 227px;
+    height: 48px;
+    margin-top: 50px;
+}
+.logo-container{
+    text-align: center;
+    background-color: transparent !important;
+}

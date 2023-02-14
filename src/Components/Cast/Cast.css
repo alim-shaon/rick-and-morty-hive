@@ -1,0 +1,10 @@
+.cast-card{
+    background: linear-gradient(#2b2835, #2b2835) padding-box,
+    linear-gradient(145deg, #9DFE00 -10.9%, #14D9E6 97.14%) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+}
+
+.cast-card img{
+    width: 100%;
+}

@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "TTTravels-Regular";
+  src: local("TTTravels-Regular"),
+  url("./Font/TTTravels-Regular.ttf") format("truetype");
+  /* font-weight: 400; */
+  }
+@font-face {
+  font-family: "TTTravels-Bold";
+  src: local("TTTravels-Bold"),
+  url("./Font/TTTravels-Bold.ttf") format("truetype");
+  /* font-weight: 900; */
+  }
+@font-face {
+  font-family: "TTTravels-BoldItalic";
+  src: local("TTTravels-BoldItalic"),
+  url("./Font/TTTravels-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  }

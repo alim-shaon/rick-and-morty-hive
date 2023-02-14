@@ -1,0 +1,145 @@
+.custom-button-1{
+    font-size: 24px !important;
+    padding: 10px 30px !important;
+    border: 0px solid !important;
+    border-radius: 30px !important;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+}
+.view-all-button{
+    border: 2px solid #9DFE00;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+.view-all-button:hover{
+    text-decoration: none;
+    color: white;
+}
+.home-head-container{
+    position: relative;
+    z-index: 99;
+    color: white;
+}
+.home-title-container{
+    position: relative;
+    z-index: 99;
+    margin-top: 179px;
+    height: 511px;
+}
+.glow{
+    position: absolute;
+    left: 22%;
+    top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 154px;
+    background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: blur(75px);
+}
+.home-title{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 154px;
+    text-transform: uppercase;
+}
+.home-title img{
+    position: relative;
+    z-index: 99;
+    width: 225px;
+    height: 145px;
+    left: 0px;
+    top: -35px;
+}
+.gradient-text{
+    background: linear-gradient(224.46deg, #9DFE00 -10.9%, #14D9E6 97.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.bubble-image{
+    position: absolute;
+    width: 214.6px;
+    height: 214.6px;
+    left: 21%;
+    top: 192px;
+    filter: blur(1.56743px);
+    transform: rotate(43.58deg);
+    background-image: url("../../Media asset/Home page/Hero Elements/bubble.png");
+    background-position: center;
+}
+.gun-image{
+    position: absolute;
+    width: 318.91px;
+    height: 331.98px;
+    top: 325px;
+    right: 14%;
+    background-image: url("../../Media asset/Home page/Hero Elements/Gun.png");
+    background-position: center;
+}
+.pill-image{
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    right: 27.5%;
+    top: 265px;
+    background-image: url("../../Media asset/Home page/Hero Elements/pill.png");
+    background-position: center;
+}
+/* home page second part */
+.home-content{
+    position: relative;
+    color: white;
+    height: 500px;
+}
+.home-bg-1{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.home-bg-3{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Spiral.png");
+    /* background-size:; */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.home-bg-2{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../../Media asset/Home page/Background  Elements/Star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* second part of home body */
+.home-body{
+    position: relative;
+    z-index: 99;
+}
